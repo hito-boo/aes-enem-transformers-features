@@ -1,0 +1,97 @@
+
+======================================================================
+           RELATÓRIO DE EXPERIMENTO DE MODELO
+======================================================================
+
+Data e Hora: 2025-12-26_12-16-59
+Arquivo de Log: transformer_regressao_c2_2025-12-26_12-16-59.txt
+
+----------------------------------------------------------------------
+                   INFORMAÇÕES DO MODELO
+----------------------------------------------------------------------
+MODEL_TYPE                  : bert
+MODEL_VARIATION             : base
+MODEL_NAME                  : neuralmind/bert-base-portuguese-cased
+
+----------------------------------------------------------------------
+               HIPERPARÂMETROS DE TREINAMENTO
+----------------------------------------------------------------------
+TARGET                      : 2
+MANUAL_SEED                 : 42
+NUM_EPOCHS                  : 6
+LEARNING_RATE               : 3e-05
+WEIGHT_DECAY                : 0.01
+TRAIN_BATCH_SIZE            : 8
+EVAL_BATCH_SIZE             : 8
+GRADIANT_ACCUMULATION_STEPS : 1
+EVAL_DURING_TRAIN_STEPS     : 50
+EARLY_STOP_MET              : eval_loss
+EARLY_STOP_PAT              : 2
+REGRESSION                  : True
+NO_CACHE                    : False
+LOGGING_STEPS               : 20
+
+----------------------------------------------------------------------
+                      HISTÓRICO DE LOSS
+----------------------------------------------------------------------
+
+Training Loss History:
+   step  running_loss
+0    50      3.429784
+1    95      2.998819
+2   100      0.314641
+3   150      1.325132
+4   190      1.571397
+5   200      2.312272
+6   250      0.871938
+7   285      0.748962
+8   300      0.742023
+
+Evaluation Loss History:
+   step  eval_loss
+0    50   1.650783
+1   100   1.619024
+2   150   1.497852
+3   200   1.443574
+4   250   1.839817
+5   300   1.529309
+6   350   1.467424
+7   400   1.550937
+8   450   1.983299
+
+
+----------------------------------------------------------------------
+             MÉTRICAS DE AVALIAÇÃO (CONJUNTO DE TESTE)
+----------------------------------------------------------------------
+
+Quadratic Weighted Kappa: 0.2826
+ENEM Accuracy: 0.9522
+Root Mean Squared Error: 53.9457
+
+Classification Report:
+              precision    recall  f1-score   support
+
+      Nota 0       0.00      0.00      0.00        16
+     Nota 40       0.50      0.15      0.24        39
+     Nota 80       0.21      0.29      0.24        24
+    Nota 120       0.38      0.80      0.52        74
+    Nota 160       0.33      0.09      0.14        34
+    Nota 200       0.00      0.00      0.00        22
+
+    accuracy                           0.36       209
+   macro avg       0.24      0.22      0.19       209
+weighted avg       0.31      0.36      0.28       209
+
+
+Confusion Matrix:
+(Linhas = Real, Colunas = Previsto)
+[[ 0  3  4  9  0  0]
+ [ 0  6  8 25  0  0]
+ [ 0  1  7 16  0  0]
+ [ 0  2 12 59  1  0]
+ [ 0  0  2 29  3  0]
+ [ 0  0  1 16  5  0]]
+
+======================================================================
+                       FIM DO RELATÓRIO
+======================================================================
