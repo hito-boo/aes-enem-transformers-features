@@ -1,0 +1,459 @@
+++++++++++++ ANÁLISE DA COMPETÊNCIA 4 ++++++++++++
+SOMENTE TF-IDF
+RESULTADOS REGRESSÃO:
+
+****  Modelo: Lasso ****
+Regression Report:
+R² Score: -0.0151
+Mean Squared Error (MSE): 1.3790
+Mean Absolute Error (MAE): 0.7884
+Root Mean Squared Error (RMSE): 1.1743
+ENEM Accuracy Score: 0.90
+Quadratic Weighted Kappa (QWK): 0.0000
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.00      0.00      0.00        28
+           3       0.46      1.00      0.63        96
+           4       0.00      0.00      0.00        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.46       209
+   macro avg       0.08      0.17      0.10       209
+weighted avg       0.21      0.46      0.29       209
+
+Confusion Matrix:
+[[ 0  0  0 17  0  0]
+ [ 0  0  0  4  0  0]
+ [ 0  0  0 28  0  0]
+ [ 0  0  0 96  0  0]
+ [ 0  0  0 56  0  0]
+ [ 0  0  0  8  0  0]]
+
+****  Modelo: Regressao Linear ****
+Regression Report:
+R² Score: 0.0508
+Mean Squared Error (MSE): 1.2895
+Mean Absolute Error (MAE): 0.8482
+Root Mean Squared Error (RMSE): 1.1355
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.2548
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.22      0.29      0.25        28
+           3       0.47      0.61      0.53        96
+           4       0.31      0.25      0.28        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.39       209
+   macro avg       0.17      0.19      0.18       209
+weighted avg       0.33      0.39      0.35       209
+
+Confusion Matrix:
+[[ 0  1  5 10  1  0]
+ [ 0  0  3  1  0  0]
+ [ 0  1  8 14  5  0]
+ [ 0  0 17 59 20  0]
+ [ 0  1  3 38 14  0]
+ [ 0  0  0  3  5  0]]
+
+****  Modelo: Ridge ****
+Regression Report:
+R² Score: 0.1268
+Mean Squared Error (MSE): 1.1862
+Mean Absolute Error (MAE): 0.7918
+Root Mean Squared Error (RMSE): 1.0891
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.2057
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.30      0.29      0.29        28
+           3       0.49      0.78      0.60        96
+           4       0.33      0.18      0.23        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.44       209
+   macro avg       0.19      0.21      0.19       209
+weighted avg       0.36      0.44      0.38       209
+
+Confusion Matrix:
+[[ 0  0  4 12  1  0]
+ [ 0  0  3  1  0  0]
+ [ 0  0  8 16  4  0]
+ [ 0  0 10 75 11  0]
+ [ 0  0  2 44 10  0]
+ [ 0  0  0  4  4  0]]
+
+****  Modelo: Random Forest Regression ****
+Regression Report:
+R² Score: 0.1537
+Mean Squared Error (MSE): 1.1497
+Mean Absolute Error (MAE): 0.7709
+Root Mean Squared Error (RMSE): 1.0722
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.2107
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.26      0.25      0.25        28
+           3       0.49      0.76      0.60        96
+           4       0.45      0.27      0.34        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.45       209
+   macro avg       0.20      0.21      0.20       209
+weighted avg       0.38      0.45      0.40       209
+
+Confusion Matrix:
+[[ 0  0  5 12  0  0]
+ [ 0  0  3  1  0  0]
+ [ 0  0  7 15  6  0]
+ [ 0  0 11 73 12  0]
+ [ 0  0  1 40 15  0]
+ [ 0  0  0  8  0  0]]
+
+****  Modelo: HistGradientBoostingRegressor ****
+Regression Report:
+R² Score: 0.1285
+Mean Squared Error (MSE): 1.1839
+Mean Absolute Error (MAE): 0.7841
+Root Mean Squared Error (RMSE): 1.0881
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.2460
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.21      0.25      0.23        28
+           3       0.51      0.78      0.62        96
+           4       0.54      0.27      0.36        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.46       209
+   macro avg       0.21      0.22      0.20       209
+weighted avg       0.41      0.46      0.41       209
+
+Confusion Matrix:
+[[ 0  0  6 10  1  0]
+ [ 0  0  3  1  0  0]
+ [ 0  0  7 17  4  0]
+ [ 0  0 16 75  5  0]
+ [ 0  0  2 39 15  0]
+ [ 0  0  0  5  3  0]]
+
+****  Modelo: SVR ****
+Regression Report:
+R² Score: 0.0547
+Mean Squared Error (MSE): 1.2842
+Mean Absolute Error (MAE): 0.7808
+Root Mean Squared Error (RMSE): 1.1332
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.0799
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.00      0.00      0.00        28
+           3       0.48      0.97      0.64        96
+           4       0.47      0.12      0.20        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.48       209
+   macro avg       0.16      0.18      0.14       209
+weighted avg       0.35      0.48      0.35       209
+
+Confusion Matrix:
+[[ 0  0  0 17  0  0]
+ [ 0  0  0  4  0  0]
+ [ 0  0  0 26  2  0]
+ [ 0  0  0 93  3  0]
+ [ 0  0  0 49  7  0]
+ [ 0  0  0  5  3  0]]
+
+****  Modelo: MLP ****
+Regression Report:
+R² Score: 0.1203
+Mean Squared Error (MSE): 1.1951
+Mean Absolute Error (MAE): 0.8114
+Root Mean Squared Error (RMSE): 1.0932
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.3326
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.17      0.25      0.20         4
+           2       0.23      0.32      0.27        28
+           3       0.49      0.59      0.54        96
+           4       0.38      0.32      0.35        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.41       209
+   macro avg       0.21      0.25      0.23       209
+weighted avg       0.36      0.41      0.38       209
+
+Confusion Matrix:
+[[ 0  2  5  9  1  0]
+ [ 0  1  3  0  0  0]
+ [ 0  2  9 12  5  0]
+ [ 0  0 20 57 19  0]
+ [ 0  1  2 35 18  0]
+ [ 0  0  0  3  5  0]]
+
+****  Modelo: KNeighborsRegressor ****
+Regression Report:
+R² Score: -0.1193
+Mean Squared Error (MSE): 1.5206
+Mean Absolute Error (MAE): 0.9464
+Root Mean Squared Error (RMSE): 1.2331
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.1811
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.15      0.21      0.18        28
+           3       0.44      0.49      0.47        96
+           4       0.33      0.36      0.34        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.35       209
+   macro avg       0.15      0.18      0.16       209
+weighted avg       0.31      0.35      0.33       209
+
+Confusion Matrix:
+[[ 0  1  3 10  3  0]
+ [ 0  0  3  1  0  0]
+ [ 0  0  6 18  4  0]
+ [ 0  2 18 47 29  0]
+ [ 0  0  9 27 20  0]
+ [ 0  0  0  3  5  0]]
+
+****  Modelo: DecisionTreeRegressor ****
+Regression Report:
+R² Score: -0.2586
+Mean Squared Error (MSE): 1.7097
+Mean Absolute Error (MAE): 0.9633
+Root Mean Squared Error (RMSE): 1.3076
+ENEM Accuracy Score: 0.91
+Quadratic Weighted Kappa (QWK): 0.1369
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.10      0.11      0.10        28
+           3       0.50      0.55      0.53        96
+           4       0.41      0.39      0.40        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.37       209
+   macro avg       0.17      0.18      0.17       209
+weighted avg       0.35      0.37      0.36       209
+
+Confusion Matrix:
+[[ 0  2  2 10  1  2]
+ [ 0  0  2  2  0  0]
+ [ 0  2  3 15  7  1]
+ [ 0  3 15 53 19  6]
+ [ 0  2  8 22 22  2]
+ [ 0  0  0  3  5  0]]
+
+****  Modelo: GradientBoostingRegressor ****
+Regression Report:
+R² Score: 0.1446
+Mean Squared Error (MSE): 1.1620
+Mean Absolute Error (MAE): 0.7785
+Root Mean Squared Error (RMSE): 1.0780
+ENEM Accuracy Score: 0.91
+Quadratic Weighted Kappa (QWK): 0.2556
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.19      0.18      0.18        28
+           3       0.52      0.79      0.63        96
+           4       0.50      0.32      0.39        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.47       209
+   macro avg       0.20      0.22      0.20       209
+weighted avg       0.40      0.47      0.42       209
+
+Confusion Matrix:
+[[ 0  0  5 12  0  0]
+ [ 0  0  3  1  0  0]
+ [ 0  0  5 18  5  0]
+ [ 0  0 11 76  9  0]
+ [ 0  0  3 35 18  0]
+ [ 0  0  0  4  4  0]]
+
+****  Modelo: Ordinal Regression LogisticAT ****
+Regression Report:
+R² Score: -0.0073
+Mean Squared Error (MSE): 1.3684
+Mean Absolute Error (MAE): 0.7560
+Root Mean Squared Error (RMSE): 1.1698
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.1115
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.67      0.07      0.13        28
+           3       0.48      0.89      0.62        96
+           4       0.33      0.18      0.23        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.46       209
+   macro avg       0.25      0.19      0.16       209
+weighted avg       0.40      0.46      0.37       209
+
+Confusion Matrix:
+[[ 0  0  1 15  1  0]
+ [ 0  0  0  4  0  0]
+ [ 0  0  2 22  4  0]
+ [ 0  0  0 85 11  0]
+ [ 0  0  0 46 10  0]
+ [ 0  0  0  4  4  0]]
+
+****  Modelo: Ordinal Regression LogisticIT ****
+Regression Report:
+R² Score: -0.0073
+Mean Squared Error (MSE): 1.3684
+Mean Absolute Error (MAE): 0.7656
+Root Mean Squared Error (RMSE): 1.1698
+ENEM Accuracy Score: 0.92
+Quadratic Weighted Kappa (QWK): 0.0535
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.00      0.00      0.00        28
+           3       0.47      0.95      0.63        96
+           4       0.27      0.07      0.11        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.45       209
+   macro avg       0.12      0.17      0.12       209
+weighted avg       0.29      0.45      0.32       209
+
+Confusion Matrix:
+[[ 0  0  0 17  0  0]
+ [ 0  0  0  4  0  0]
+ [ 0  0  0 25  3  0]
+ [ 0  0  0 91  5  0]
+ [ 0  0  0 52  4  0]
+ [ 0  0  0  5  3  0]]
+
+****  Modelo: Ordinal Regression OrdinalRidge ****
+Regression Report:
+R² Score: 0.0420
+Mean Squared Error (MSE): 1.3014
+Mean Absolute Error (MAE): 0.7560
+Root Mean Squared Error (RMSE): 1.1408
+ENEM Accuracy Score: 0.94
+Quadratic Weighted Kappa (QWK): 0.2057
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.30      0.29      0.29        28
+           3       0.49      0.78      0.60        96
+           4       0.33      0.18      0.23        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.44       209
+   macro avg       0.19      0.21      0.19       209
+weighted avg       0.36      0.44      0.38       209
+
+Confusion Matrix:
+[[ 0  0  4 12  1  0]
+ [ 0  0  3  1  0  0]
+ [ 0  0  8 16  4  0]
+ [ 0  0 10 75 11  0]
+ [ 0  0  2 44 10  0]
+ [ 0  0  0  4  4  0]]
+
+****  Modelo: Least Absolute Deviation (LAD) ****
+Regression Report:
+R² Score: 0.0983
+Mean Squared Error (MSE): 1.2249
+Mean Absolute Error (MAE): 0.6890
+Root Mean Squared Error (RMSE): 1.1067
+ENEM Accuracy Score: 0.93
+Quadratic Weighted Kappa (QWK): 0.2778
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.33      0.11      0.16        28
+           3       0.53      0.81      0.64        96
+           4       0.46      0.45      0.45        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.51       209
+   macro avg       0.22      0.23      0.21       209
+weighted avg       0.41      0.51      0.44       209
+
+Confusion Matrix:
+[[ 0  0  2 15  0  0]
+ [ 0  0  2  2  0  0]
+ [ 0  0  3 19  6  0]
+ [ 0  0  2 78 16  0]
+ [ 0  0  0 31 25  0]
+ [ 0  0  0  1  7  0]]
+
+
+RESULTADOS CLASSIFICAÇÃO:
+
+Otimização de SVC para Classificação:
+Fitting 5 folds for each of 12 candidates, totalling 60 fits
+
+Melhores parâmetros: {'C': 1, 'kernel': 'linear'}
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.00      0.00      0.00        17
+           1       0.00      0.00      0.00         4
+           2       0.00      0.00      0.00        28
+           3       0.49      0.83      0.62        96
+           4       0.51      0.41      0.46        56
+           5       0.00      0.00      0.00         8
+
+    accuracy                           0.49       209
+   macro avg       0.17      0.21      0.18       209
+weighted avg       0.36      0.49      0.40       209
