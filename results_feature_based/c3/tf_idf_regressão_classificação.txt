@@ -438,8 +438,12 @@ Confusion Matrix:
 
 
 RESULTADOS CLASSIFICAÇÃO:
+
 Otimização de SVC para Classificação:
 Fitting 5 folds for each of 12 candidates, totalling 60 fits
+Quadratic Weighted Kappa (QWK): 0.0929
+Root Mean Squared Error (RMSE): 1.5636
+ENEM Accuracy Score: 0.87
 
 Melhores parâmetros: {'C': 1, 'kernel': 'linear'}
 
